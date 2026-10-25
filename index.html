@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <link rel="shortcut icon" href="./assets/icons/pick.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script type="module" src="./scripts/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a
+                class="header__logo"
+                href="/"
+            >
+                GuitarShop
+            </a>
+            <button
+                class="header__cart-button button"
+                type="button"
+                data-js-open-cart
+            >
+                Cart
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__inner container">
+                <h1 class="hero__title">
+                    <span>Discover the best</span>
+                    <span>Acoustic guitars for your sound</span>
+                </h1>
+                <p class="hero__description">Discover premium acoustic guitars defined by rich tone, refined craftsmanship, and exceptional detail.</p>
+            </div>
+        </section>
+        <section class="products container">
+            <div class="products__top">
+                <h2 class="products__title">Acoustic Guitars</h2>
+                <select class="products__filters" data-js-select>
+                    <option value="default">Default</option>
+                    <option value="cheap">Price: Low to High</option>
+                    <option value="expensive">Price: High to Low</option>
+                </select>
+            </div>
+            <ul class="products__list" data-js-products></ul>
+        </section>
+    </main>
+    <dialog id="cart" class="cart" data-js-cart>
+        <header class="cart__header">
+            <h3 class="cart__title">Ваша корзина</h3>
+            <form method="dialog" class="cart__form">
+                <button
+                    class="cart__close-button x-button"
+                    aria-label="Закрыть корзину"
+                    type="submit"
+                >
+                </button>
+            </form>
+        </header>
+        <ul class="cart__list" data-js-cart-body>
+                <li class="cart__empty">
+                    <span class="cart__empty-icon" aria-hidden="true">🛒</span>
+                    <span>Корзина пуста</span>
+                    <p>Добавьте товары, чтобы они появились здесь</p>
+                </li>
+        </ul>
+        <footer class="cart__footer">
+            <div class="cart__total">
+                <b>Итого:</b>
+                <span data-js-total-price>0 USD</span>
+            </div>
+        </footer>
+    </dialog>
+</body>
+</html>

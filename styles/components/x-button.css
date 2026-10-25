@@ -1,0 +1,19 @@
+.x-button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 48px;
+    aspect-ratio: 1;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        aspect-ratio: 1;
+        translate: -50% -50%;
+        background: url('../../assets/icons/close.svg') center/contain no-repeat;
+    }    
+}

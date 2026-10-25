@@ -1,0 +1,15 @@
+.header {
+    border-bottom: var(--border);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 15px;
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 28px;
+}

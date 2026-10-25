@@ -1,0 +1,11 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-gray: #e5e7eb;
+    --color-gray-2: #3C4043;
+    --color-black: #202124;
+
+    --border: 1px solid var(--color-gray);
+
+    --container-width: 1200px;
+    --container-padding-x: 15px;
+}

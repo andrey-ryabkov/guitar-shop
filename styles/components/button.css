@@ -1,0 +1,24 @@
+.button {
+    height: 36px;
+    padding-inline: 24px;
+    font-size: 14px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: 1px solid var(--color-black);
+    border-radius: 30px;
+    transition-duration: 0.3s;
+
+    &:hover {
+        background-color: var(--color-gray-2);
+        border-color: var(--color-gray-2);
+    }
+
+    &.in-cart {
+        color: var(--color-black);
+        background-color: transparent;
+
+        &:hover {
+            background-color: var(--color-gray);
+        }
+    }
+}

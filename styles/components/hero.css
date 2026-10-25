@@ -1,0 +1,29 @@
+.hero__inner {
+    padding-block: 55px;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: clamp(36px, 4.16vw, 50px);
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero__title span {
+    display: block;
+}
+
+.hero__description {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+    max-width: 530px;
+    margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+    .hero__description {
+        font-size: 16px;
+    }
+}

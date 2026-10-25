@@ -1,0 +1,12 @@
+@import './normalize.css';
+@import './fonts.css';
+@import './variables.css';
+@import './globals.css';
+@import './utils.css';
+
+@import './components/button.css';
+@import './components/x-button.css';
+@import './components/header.css';
+@import './components/hero.css';
+@import './components/products.css';
+@import './components/cart.css'
